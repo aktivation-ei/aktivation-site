@@ -1,4 +1,4 @@
-// Défilement fluide vers les sections
+// Défilement fluide
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener("click", function(e) {
     e.preventDefault();
@@ -8,15 +8,12 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-// Menu burger pour mobile
-const burger = document.createElement("div");
-burger.classList.add("burger");
-burger.innerHTML = "☰";
-document.querySelector("header").prepend(burger);
+// Menu burger
+const burger = document.querySelector(".burger");
+const navLinks = document.querySelector(".nav-links");
 
-const nav = document.querySelector("nav");
 burger.addEventListener("click", () => {
-  nav.classList.toggle("open");
+  navLinks.classList.toggle("open");
 });
 
 // Animation au scroll

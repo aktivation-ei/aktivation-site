@@ -1,17 +1,71 @@
+/* Base */
 body {
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  line-height: 1.6;
+  font-family: 'Montserrat', sans-serif;
+  background: #f9f9f9;
   color: #333;
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: rgba(0,0,0,0.7);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar .logo {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.burger {
+  display: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
 }
 
 /* Hero */
 .hero {
-  background: linear-gradient(to right, #1e3c72, #2a5298);
-  color: white;
+  height: 100vh;
+  background: url('https://picsum.photos/1920/1080?blur=3') center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  padding: 100px 20px;
+  color: white;
   position: relative;
+}
+
+.hero .overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.5);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
 }
 
 .hero h1 {
@@ -26,26 +80,27 @@ body {
 
 .btn {
   background: #ff9800;
+  padding: 12px 25px;
+  border-radius: 30px;
   color: white;
-  padding: 10px 20px;
   text-decoration: none;
-  border-radius: 25px;
-  transition: background 0.3s;
+  font-weight: bold;
+  transition: transform 0.3s, background 0.3s;
 }
 
 .btn:hover {
   background: #e68900;
+  transform: scale(1.05);
 }
 
 /* Sections */
 .section {
-  padding: 60px 20px;
+  padding: 80px 20px;
   text-align: center;
-  max-width: 900px;
+  max-width: 1000px;
   margin: auto;
 }
 
-/* Cards */
 .cards {
   display: flex;
   justify-content: center;
@@ -54,15 +109,22 @@ body {
 }
 
 .card {
-  background: #f4f4f4;
-  padding: 20px;
-  border-radius: 10px;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
   flex: 1 1 250px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   transition: transform 0.3s;
 }
 
 .card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-8px);
+}
+
+.icon {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 10px;
 }
 
 /* Formulaire */
@@ -75,9 +137,9 @@ form {
 }
 
 input, textarea {
-  padding: 10px;
+  padding: 12px;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 8px;
 }
 
 /* Footer */
@@ -88,44 +150,22 @@ footer {
   padding: 20px;
 }
 
-/* Menu burger */
-.burger {
-  display: none;
-  font-size: 2rem;
-  cursor: pointer;
-  color: white;
-  position: absolute;
-  top: 20px;
-  left: 20px;
-}
-
-nav {
-  transition: max-height 0.3s ease;
-}
-
+/* Responsive */
 @media (max-width: 768px) {
-  nav ul {
+  .nav-links {
     display: none;
     flex-direction: column;
     background: #222;
-    padding: 10px;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    padding: 20px;
   }
-  nav.open ul {
+  .nav-links.open {
     display: flex;
   }
   .burger {
     display: block;
   }
-}
-
-/* Animations au scroll */
-.section {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: all 0.6s ease-out;
-}
-
-.section.visible {
-  opacity: 1;
-  transform: translateY(0);
 }
