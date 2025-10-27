@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aktivation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- En-tête avec navigation -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Aktivation</h1>
+      <p>Boostez vos projets avec des solutions innovantes</p>
+      <a href="#services" class="btn">Découvrir nos services</a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Section À propos -->
+  <section id="about" class="section">
+    <h2>À propos</h2>
+    <p>
+      Aktivation est une initiative dédiée à accompagner les entreprises et porteurs de projets
+      dans leur transformation digitale. Notre mission : vous aider à concrétiser vos idées
+      grâce à des solutions modernes et accessibles.
+    </p>
+  </section>
+
+  <!-- Section Services -->
+  <section id="services" class="section">
+    <h2>Nos Services</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Conseil</h3>
+        <p>Accompagnement stratégique pour vos projets.</p>
+      </div>
+      <div class="card">
+        <h3>Développement</h3>
+        <p>Sites web modernes, performants et responsives.</p>
+      </div>
+      <div class="card">
+        <h3>Formation</h3>
+        <p>Ateliers pratiques pour renforcer vos compétences.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Contact -->
+  <section id="contact" class="section">
+    <h2>Contactez-nous</h2>
+    <form>
+      <input type="text" placeholder="Votre nom" required>
+      <input type="email" placeholder="Votre email" required>
+      <textarea placeholder="Votre message" required></textarea>
+      <button type="submit" class="btn">Envoyer</button>
+    </form>
+  </section>
+
+  <!-- Pied de page -->
+  <footer>
+    <p>&copy; 2025 Aktivation - Tous droits réservés</p>
+    <div class="socials">
+      <a href="#">LinkedIn</a> | <a href="#">Instagram</a>
+    </div>
+  </footer>
+
+  <!-- Script JS -->
+  <script src="script.js"></script>
+</body>
+</html>
