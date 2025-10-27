@@ -8,16 +8,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-// Menu burger
-const burger = document.querySelector(".burger");
-const navLinks = document.querySelector(".nav-links");
-
-burger.addEventListener("click", () => {
-  navLinks.classList.toggle("open");
-});
-
 // Animation au scroll
-const sections = document.querySelectorAll(".section");
+const sections = document.querySelectorAll(".fade-in");
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
