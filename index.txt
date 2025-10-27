@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aktivation | Abonnement Web pour Petites Entreprises</title>
+  <meta name="description" content="Abonnement mensuel TTC pour petites entreprises : logo & image de marque, page Google Business, site web, gestion et modifications illimitées. À partir de 150€ TTC." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <div class="brand">
+        <a href="#" class="logo">Aktivation</a>
+        <p class="tagline">Propulsez votre présence en ligne, simplement.</p>
+      </div>
+      <nav class="menu">
+        <a href="#offre">Offre</a>
+        <a href="#inclus">Inclus</a>
+        <a href="#temoignages">Résultats</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact" class="cta small">Contact</a>
+      </nav>
+    </div>
+
+    <section class="hero container">
+      <h1>Abonnement web pour petites entreprises</h1>
+      <p class="sub">
+        Logo & image de marque, page Google Business, site web — avec gestion et modifications illimitées.
+      </p>
+      <div class="hero-cta">
+        <a href="#offre" class="cta">Voir les tarifs</a>
+        <a href="#contact" class="cta ghost">Parler de votre projet</a>
+      </div>
+      <ul class="benefits">
+        <li><span>✔</span><strong>Rapide:</strong> prêt en quelques jours</li>
+        <li><span>✔</span><strong>Simple:</strong> nous gérons tout pour vous</li>
+        <li><span>✔</span><strong>Flexible:</strong> sans engagement ou avec engagement 6 mois</li>
+      </ul>
+    </section>
+  </header>
+
+  <main>
+    <section id="offre" class="pricing container">
+      <h2>Deux options simples</h2>
+      <p class="lead">Choisissez la formule qui vous correspond. Les services inclus sont identiques, seul l’engagement change.</p>
+
+      <div class="cards">
+        <article class="card">
+          <h3>Sans engagement</h3>
+          <p class="price"><span>200€ TTC</span> / mois</p>
+          <ul class="features">
+            <li>Logo & image de marque</li>
+            <li>Page Google Business</li>
+            <li>Site web professionnel</li>
+            <li>Gestion & modifications illimitées</li>
+          </ul>
+          <a href="#contact" class="cta full">Démarrer sans engagement</a>
+          <p class="note">Résiliez quand vous le souhaitez.</p>
+        </article>
+
+        <article class="card highlight">
+          <div class="badge">Meilleur choix</div>
+          <h3>Avec engagement 6 mois</h3>
+          <p class="price"><span>150€ TTC</span> / mois</p>
+          <ul class="features">
+            <li>Logo & image de marque</li>
+            <li>Page Google Business</li>
+            <li>Site web professionnel</li>
+            <li>Gestion & modifications illimitées</li>
+          </ul>
+          <a href="#contact" class="cta full">Choisir l’engagement 6 mois</a>
+          <p class="note">Idéal pour bâtir durablement votre présence en ligne.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="inclus" class="included container">
+      <h2>Ce qui est inclus</h2>
+      <div class="grid">
+        <div class="include"><h3>Logo & image de marque</h3><p>Identité visuelle claire et professionnelle.</p></div>
+        <div class="include"><h3>Page Google Business</h3><p>Optimisée pour être trouvé localement.</p></div>
+        <div class="include"><h3>Site web clé en main</h3><p>Moderne, rapide et responsive.</p></div>
+        <div class="include"><h3>Modifications illimitées</h3><p>Nous gérons toutes vos mises à jour.</p></div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact container">
+      <h2>Parlons de votre projet</h2>
+      <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="contact">
+        <p style="display:none"><label>Ne pas remplir : <input name="bot-field"></label></p>
+        <div class="row">
+          <div class="field"><label for="name">Nom</label><input id="name" name="name" type="text" required></div>
+          <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" required></div>
+        </div>
+        <div class="row">
+          <div class="field"><label for="phone">Téléphone</label><input id="phone" name="phone" type="tel"></div>
+          <div class="field"><label for="company">Entreprise</label><input id="company" name="company" type="text"></div>
+        </div>
+        <div class="field"><label for="message">Votre besoin</label><textarea id="message" name="message" rows="5" required></textarea></div>
+        <button type="submit" class="cta full">Envoyer ma demande</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="foot-grid">
+        <div>
+          <div class="logo">Aktivation</div>
+          <p>Service dédié aux petites entreprises qui souhaitent se développer sur Internet.</p>
+        </div>
+        <div>
+          <h4>Coordonnées</h4>
+          <ul class="list">
+            <li>11 rue des Sœurs, 76600 Le Havre</li>
+            <li>aktivation.ei@gmail.com</li>
+            <li>06 60 51 59 13</li>
+            <li>SIRET : 94823818300024</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Liens</h4>
+          <ul class="list">
+            <li><a href="mentions-legales.html">Mentions légales</a></li>
+            <li><a href="politique-confidentialite.html">Politique de confidentialité</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <p>© 2025 Aktivation. Tous droits réservés.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
